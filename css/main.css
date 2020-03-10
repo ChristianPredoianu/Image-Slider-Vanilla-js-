@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75vh;
+  width: 60vw;
+  background-color: black;
+  position: relative;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.85);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.85);
+}
+
+.img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.img-container .arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  -webkit-transform: translate(-3%, -50%);
+          transform: translate(-3%, -50%);
+  z-index: 50;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.img-container .arrow-right {
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  right: 3%;
+  -webkit-transform: translate(-3%, -50%);
+          transform: translate(-3%, -50%);
+  z-index: 50;
+  color: white;
+  cursor: pointer;
+}
+
+.animated {
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 0-600px:      Phone
+600-900px:    Tablet: Portrait
+900-1200px:   Tablet Landscape
+[1200-1800px] Is where the normal styles apply */
+@media (max-width: 600px) {
+  .img-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .img-container {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
